@@ -1,0 +1,133 @@
+
+div.list-data {
+
+	display: block;
+	
+	
+}
+
+div.list-group-header {
+
+	display: block;
+	padding-bottom: 10px;
+	
+}
+
+
+div.closed::before  {
+
+	content: "";
+	position: relative;
+	
+	top: 0px;
+	float:right;
+	
+	width: 16px;
+	height: 16px;
+	
+	margin: 0 4px 0 -4px;
+	
+    background: url('../images/32x32-mono-icons/plus32.png') ;
+	background-size: 16px 16px;
+	background-repeat:no-repeat;
+    background-position:right center;
+	
+
+}
+
+div.open::before  {
+
+	content: "";
+	position: relative;
+	
+	top: 0px;
+	float:right;
+	
+	width: 16px;
+	height: 16px;
+	
+	margin: 0 4px 0 -4px;
+	
+    background: url('../images/32x32-mono-icons/minus32.png') ;
+	background-size: 16px 16px;
+	background-repeat:no-repeat;
+    background-position:right center;
+	
+
+}
+
+
+div.list-data .list-item{
+
+/*	float: left;*/
+
+
+	border-style: solid;
+/*	border-left-width: 1px;
+	border-right-width: 1px;*/
+	border-top-width: 1px;
+/*	border-bottom-width: 1px;*/
+
+	color: #000000;
+
+	
+}
+
+	
+div.list-data .list-item:last-child  {
+
+	border-bottom-width: 1px;
+	
+}
+
+
+div.list-data .list-item {
+
+	text-decoration: none;
+	
+	display: block;
+	
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	
+
+}
+
+
+
+div.list-data .list-item:hover {
+
+
+}
+
+div.list-data .list-item:active {
+
+}
+
+
+
+div.list-data .list-header{
+
+
+}
+
+span.bubble {
+
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	
+	border-radius: 20px;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+
+	padding-left: 8px;
+	padding-right: 8px;
+	
+	background-color: #ffffff;
+	
+}

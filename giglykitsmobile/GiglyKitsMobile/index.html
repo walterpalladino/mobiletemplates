@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+		<meta charset="utf-8">	
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Giglykits.com.ar/mob</title>
+
+		<script type="text/javascript" src="libs/jq/jquery-1.7.2.js"></script>
+        <script type="text/javascript" src="libs/style-f/style-f-0.0.js"></script>
+        <script type="text/javascript" src="libs/mustache/mustache.js"></script>
+        <script type="text/javascript" src="libs/log4javascript.js"></script>
+ <!--       <script type="text/javascript" src="libs/jgestures.js"></script>-->
+		<script type="text/javascript" src="libs/jquery.mobile.events.js"></script>
+	
+		<script type="text/javascript" src="libs/Carousel.js"></script>
+
+		<!-- ResponsiveSlides -->
+<!--		<script src="libs/responsiveslides/responsiveslides.min.js"></script>
+		<link rel="stylesheet" href="libs/responsiveslides/carousel.css" />-->
+		
+        <link rel="stylesheet" href="css/reset.css" />
+        <link rel="stylesheet" href="css/base.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/header.css" />
+		<link rel="stylesheet" href="css/buttons.css" />
+		<link rel="stylesheet" href="css/button-group.css" />
+		<link rel="stylesheet" href="css/nav-group.css" />
+		<link rel="stylesheet" href="css/list-data.css" />
+		<link rel="stylesheet" href="css/carousel.css" />
+		<link rel="stylesheet" href="css/contact.css" />
+		<link rel="stylesheet" href="css/app.css" />
+		
+		<link rel="stylesheet" href="css/rss-feeder.css" />
+		
+        <script type="text/javascript" src="libs/Stack.js"></script>
+        <script type="text/javascript" src="libs/DeviceUtils.js"></script>
+
+        <script type="text/javascript" src="libs/Messages.js"></script>
+        <script type="text/javascript" src="libs/Navigation.js"></script>
+		
+        <script type="text/javascript" src="app/rss.reader.dao.js"></script>
+        <script type="text/javascript" src="app/rss.reader.js"></script>
+        <script type="text/javascript" src="app/navigation.events.js"></script>
+        <script type="text/javascript" src="app/presentation.js"></script>
+        <script type="text/javascript" src="app/presentation.dao.js"></script>
+
+        <script type="text/javascript" src="app/app.init.js"></script>
+
+</head>
+
+<body>	
+
+	<!-- presentation container -->
+	<div id="presentation-list" data-type="ui-page-container">
+
+		<div data-type="ui-header" class="header">
+			<div class="logo"></div>
+		</div>
+
+		<!-- the content -->
+		<div role="main" class="content">
+		
+			<div class="carousel-frame" id="image-list"></div>
+			
+		</div>
+		
+		<!-- the footer -->
+		<div data-type="ui-footer" role="contentinfo" class="footer">
+
+			<div id="rss-page-select" class="nav-group">
+				<div id="0" class="segment" data-nav="feeds-select"><div class=" nav-image nav-search"></div></div>
+				<div id="1" class="segment" data-nav="contact-form"><div class=" nav-image nav-contact"></div></div>
+				<div id="2" class="segment" data-nav="presentation-list"><div class=" nav-image nav-slide"></div></div>
+			</div>
+
+		</div>
+	
+	</div>
+	<!--end container-->
+
+	
+	<!--start container-->
+	<div id="feeds-select" data-type="ui-page-container" class="hidden">
+
+		<div data-type="ui-header" class="header">
+
+			<div class="logo"></div>
+<!--				
+			<div id="rss-feed-select" class="button-group float-right">
+				<div id="0" class="segment">Blog</div>
+				<div id="1" class="segment">Calendarios</div>
+				<div id="2" class="segment">Tutoriales</div>
+			</div>
+-->		
+		</div>
+
+
+		<!-- the content -->
+		<div role="main" class="content">
+		
+			<div id="main-list" class="list-data">
+			
+				<div class="list-item list-header rss-feed-list-header">
+					<h1>Seleccione el feed</h1>
+				</div>
+			
+				<div id="0" class="list-item rss-feed-list-index"><h1>Blog</h1></div>
+				<div id="1" class="list-item rss-feed-list-index"><h1>Calendarios</h1></div>
+				<div id="2" class="list-item rss-feed-list-index"><h1>Tutoriales</h1></div>
+			
+			</div>
+		
+		</div>
+
+		
+		<!-- the footer -->
+		<div data-type="ui-footer" role="contentinfo" class="footer">
+
+			<div id="rss-page-select" class="nav-group">
+				<div id="0" class="segment" data-nav="feeds-select"><div class=" nav-image nav-search"></div></div>
+				<div id="1" class="segment" data-nav="contact-form"><div class=" nav-image nav-contact"></div></div>
+				<div id="2" class="segment" data-nav="presentation-list"><div class=" nav-image nav-slide"></div></div>
+			</div>
+
+		</div>
+	
+	</div>
+	<!--end container-->
+
+	<!--start container-->
+	<div id="feeds-list" data-type="ui-page-container" class="hidden">
+
+		<div data-type="ui-header" class="header">
+
+			<div class="logo">
+				<div class="back" id="back-button"></div>
+			</div>
+<!--				
+			<div id="rss-feed-select" class="button-group float-right">
+				<div id="0" class="segment">Blog</div>
+				<div id="1" class="segment">Calendarios</div>
+				<div id="2" class="segment">Tutoriales</div>
+			</div>
+-->		
+		</div>
+
+
+		<!-- the content -->
+		<div role="main" class="content">
+		</div>
+
+		
+		<!-- the footer -->
+		<div data-type="ui-footer" role="contentinfo" class="footer">
+
+			<div id="rss-page-select" class="nav-group">
+				<div id="0" class="segment" data-nav="feeds-select"><div class=" nav-image nav-search"></div></div>
+				<div id="1" class="segment" data-nav="contact-form"><div class=" nav-image nav-contact"></div></div>
+				<div id="2" class="segment" data-nav="presentation-list"><div class=" nav-image nav-slide"></div></div>
+			</div>
+
+		</div>
+	
+	</div>
+	<!--end container-->
+	
+	<div id="feeds-detail" data-type="ui-page-container" class="hidden">
+
+		<div data-type="ui-header" class="header">
+			<div class="logo">
+				<div class="back" id="back-button"></div>
+			</div>
+		</div>
+
+		<!-- the content -->
+		<div role="main" class="content"></div>
+		
+		<!-- the footer -->
+		<div data-type="ui-footer" role="contentinfo" class="footer">
+		
+			<div id="rss-page-select" class="nav-group">
+				<div id="0" class="segment" data-nav="feeds-select"><div class=" nav-image nav-search"></div></div>
+				<div id="1" class="segment" data-nav="contact-form"><div class=" nav-image nav-contact"></div></div>
+				<div id="2" class="segment" data-nav="presentation-list"><div class=" nav-image nav-slide"></div></div>
+			</div>
+		
+		</div>
+	
+	</div>
+	<!--end container-->
+	
+	<!-- contact container -->
+	<div id="contact-form" data-type="ui-page-container" class="hidden">
+
+		<div data-type="ui-header" class="header">
+
+			<div class="logo"></div>
+		
+		</div>
+
+
+		<!-- the content -->
+		<div role="main" class="content">
+
+				<div class="list-item list-header rss-feed-list-header">
+					<h1>Permanezcamos en Contacto</h1>
+				</div>
+			
+				<div class="list-item ">
+					<img src="./images/facebook.png">
+					<img src="./images/twitter2.png">
+				</div>
+				<div class="list-item ">
+					<img src="./images/mail_2.png">
+					<img src="./images/pin.png">
+				</div>
+
+		</div>
+
+		
+		<!-- the footer -->
+		<div data-type="ui-footer" role="contentinfo" class="footer">
+
+			<div id="rss-page-select" class="nav-group">
+				<div id="0" class="segment" data-nav="feeds-select"><div class=" nav-image nav-search"></div></div>
+				<div id="1" class="segment" data-nav="contact-form"><div class=" nav-image nav-contact"></div></div>
+				<div id="2" class="segment" data-nav="presentation-list"><div class=" nav-image nav-slide"></div></div>
+			</div>
+
+		</div>
+	
+	</div>
+	<!--end container-->
+	
+
+	<script>
+		console.log('pasa');
+		
+		$(document).ready(function() {
+		app.init();
+//alert("this Alert fires OK");
+$(document).bind("deviceready", function()
+{ alert("Got the Error and this Alert Never fires"); });
+});
+//		document.addEventListener("deviceready", app.init, false);
+//		document.addEventListener("online", detectEnv._check, false);
+		document.addEventListener("deviceready", function () {
+			console.log('deviceready fired');
+		}, false);
+
+	</script>
+
+</body>
+
+</html>
+

@@ -1,0 +1,137 @@
+
+
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+/*-------------------------------------------------------------------*/
+
+body {
+	background-color:	#ffffff;
+	
+	
+	font-family: 'Courier';
+	
+
+	/* change this to change trip tone */
+/*	background-color: #ddd;
+	background-image: -webkit-gradient(linear, 0 0, 0 100%, color-stop(.5, rgba(255, 255, 255, .2)), color-stop(.5, transparent), to(transparent));
+	background-image: -moz-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+	background-image: -o-linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+	background-image: linear-gradient(rgba(255, 255, 255, .2) 50%, transparent 50%, transparent);
+
+	-webkit-background-size: 50px 10px;
+	-moz-background-size: 50px 10px;
+	background-size: 50px 10px;
+	*/
+	/*
+	overflow-x: hidden;
+	overflow-y: hidden;
+	*/
+}
+
+
+div[data-type*="ui-page-container"] {
+
+	margin-right: auto;
+	margin-left: auto;
+
+	width: 100%;
+/*	max-width: 1024px;*/
+	height: auto !important;
+/*
+	background-color: #ffffff;
+	background-attachment: fixed;
+	*/
+	/* rounded corner */
+	
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;	
+
+	/* If fixed header used */
+	padding-top: 90px;
+	/* If fixed footer used */
+	padding-bottom: 100px;
+	
+}
+
+
+.float-left {
+	float: left;
+}
+
+.float-right {
+	float: right;
+}
+
+
+.hidden {
+	display: none !important;
+}
+.vissible {
+	display: block !important;
+}
+
+	.bgtransparent{
+		position:fixed;
+		left:0;
+		top:0;
+		background-color:#000;
+		opacity:0.6;
+		filter:alpha(opacity=60);
+		z-index: 9000 !important;
+
+	}
+	
+	.modal-window {
+		z-index: 9999;
+	}
+
+	.message {
+					
+		text-align: center;
+		color: #ffffff;
+		
+		font-size: 36px;
+		
+		height:5em;
+		padding:3em 0 1em 0;
+	}
+
+
+div.content {
+
+	margin-right: auto;
+	margin-left: auto;
+
+	width: 100%;
+/*	max-width: 1024px;*/
+	height: auto;
+
+	background-color: #ffffff;
+/*	background-attachment: fixed;*/
+	
+/*	
+	border-style: solid;
+	border-left-width: 1px;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-right-width: 1px;
+	
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;	
+
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	box-shadow: inset 0px 1px 0px #9e8d84, 0px 2px 0px 0px #322620, 0px 5px 3px #999;
+	*/
+	
+	overflow: auto;
+	overflow-y: hidden;
+
+}

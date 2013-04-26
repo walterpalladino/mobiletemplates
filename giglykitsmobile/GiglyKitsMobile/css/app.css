@@ -1,0 +1,17 @@
+body {
+	font-size : 16px;
+}
+
+
+.back {
+	background: url('../images/back_v2.png') ;
+	background-size: 44px 44px;
+	background-repeat: no-repeat;
+    background-position: center center;
+	
+	width: 54px;
+	height: 54px;
+	position: absolute;
+	bottom: -8px;
+	left: 0px;
+}

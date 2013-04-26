@@ -1,0 +1,51 @@
+/* Carousel Settings */
+
+.carousel-frame {
+	
+	width: 90%;
+/*	max-width: 300px;*/
+	height: auto;
+	
+	text-align: center;
+	
+	overflow: hidden;
+}
+
+.carousel-panel {
+	display: block;
+	float: left;
+	
+	width: 100%;
+	height: auto;
+
+	text-align: center;
+}
+
+.carousel-panel {
+
+	display: block;
+	top: 0px;
+	left: 0px;
+	
+	text-align: center;
+	position: relative;
+}
+
+.clearfix { clear: both; }
+
+.carousel-panel img {
+/*	pointer-events: none;*/
+
+	/*	Avoid dragging events on content */
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	/* this will work for QtWebKit in future */
+	-webkit-user-drag: none;
+}
+
+.carousel-frame img {
+	width: 80%;
+/*	max-height: 280px;*/
+	
+/*	width:240px;*/
+}
